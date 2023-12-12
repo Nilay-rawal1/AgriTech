@@ -43,6 +43,8 @@ section{
 }
 .card{
     box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.961) !important;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s !important;
     background: transparent !important ;
     border:  5px groove rgb(0, 255, 26) !important;
     backdrop-filter: blur(10px);
@@ -51,6 +53,7 @@ section{
     
 
 }
+
 .card-header{
     color: white !important;
     border: 2px solid   ;
@@ -67,9 +70,23 @@ section{
 .btn{
     border: 2px solid green  !important;
     color: white !important;
+    transition: all 0.5s ease 0s !important;
 }
 .btn:hover{
     background: green !important; 
-    transform: scale(1.05);
+    transform: scale(1.15);
+    
+   
+
+
 
 }
+nav{
+    background-color: black !important;
+    box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+  
+  }
+  .navbar.bg-light {
+     border-bottom: 4px solid green;
+     box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+    }
