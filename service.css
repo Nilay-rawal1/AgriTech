@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+
+section{
+    background: rgb(0, 0, 0, 0.75) url("images/main bg 3.jpeg");    
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  
+  box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+}
+.heading{
+   
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading h1{
+    padding: 1rem;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 8vw;
+}
+.servicebox{
+    overflow-x: hidden  ;
+    
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    
+    padding-bottom: 15vh;
+}
+.card{
+    box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.961) !important;
+    background: transparent !important ;
+    border:  5px groove rgb(0, 255, 26) !important;
+    backdrop-filter: blur(10px);
+    padding: 10px !important;
+    cursor: pointer;
+    
+
+}
+.card-header{
+    color: white !important;
+    border: 2px solid   ;
+    box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.361) !important;
+
+}
+.card-title{
+    color: greenyellow !important;
+}
+.card-text{
+    color: white !important;
+    text-align: justify;
+}
+.btn{
+    border: 2px solid green  !important;
+    color: white !important;
+}
+.btn:hover{
+    background: green !important; 
+    transform: scale(1.05);
+
+}
