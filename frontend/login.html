@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <style>
+        html, body{
+            overflow: hidden;
+            background-image: url("login-background.jpg");
+            background-size: cover, contain;
+            background-repeat: no-repeat;
+            margin:0;
+            width: 100%;
+            height: 100%;
+            
+        }
+        #overlay-color{
+            background: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            width: 100%;
+        }
+        #header-color{
+            background: black;
+            width: 100%;
+            height: 10%;
+        }
+        #right-align-header-text{
+            color: white;
+            margin: 0 auto;
+            margin-right: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            font-family: "Roboto", monospace;
+            font-size: 22.5px;
+        }
+        #right-align-body-text{
+            color: white;
+            margin: 0 auto;
+            margin-right: 44%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            font-family: "Roboto", serif, monospace;
+            font-size: 80px;
+        }
+        #loginbox{
+            background-color: white;
+            align-items: center;
+            width: 200px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+
+        }
+        #right-align-bottom-elements{
+            margin: 0 auto;
+            margin-right: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+        #helpbox{
+            color: #3E3E3E;
+            text-align: center;
+            font-family: "Nunito", monospace;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            background-color: white;
+            display: flex;
+            border-radius: 30px;
+            width: 204px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            flex-shrink: 0;
+        }
+        #green-circle{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: larger;
+            background-color: #8CD82E;
+            border-radius: 50%;
+            height: 75px;
+            width: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div id="overlay-color">
+        <div id="header-color">
+            <br>
+            <br>
+            <div id="right-align-header-text">
+                HOME 
+                &nbsp; &nbsp; &nbsp; &nbsp; 
+                LOGIN 
+                &nbsp; &nbsp; &nbsp; &nbsp; 
+                OUR SERVICES 
+                &nbsp; &nbsp; &nbsp; &nbsp; 
+                ABOUT US
+            </div>
+        </div>
+        <br>    
+        <div id="right-align-body-text">
+            <div>Login</div>
+            <br>
+            <div style="font-size: 20px; color: black" id="loginbox">
+                <center>
+                    Username<br>
+                    <input type="text">
+                    <br><br>
+                    Password
+                    <br>
+                    <input type="password">
+                    <br><br>
+                    <button name="Log In">Log In</button>
+                </center>
+                
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <br><br>
+        <div id="right-align-bottom-elements">
+            <table>
+                <tr>
+                    <td>
+                        <div id="helpbox">
+                            How may I help you?
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <div id="green-circle">
+                            <img height="69px" width="69px" src="customer-care-icon.png"/>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
