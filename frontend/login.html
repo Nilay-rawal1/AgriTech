@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services-Agritech</title>
+    <link rel="stylesheet" href="service.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Login</title>
     <style>
         html, body{
@@ -46,10 +51,11 @@
             font-size: 80px;
         }
         #loginbox{
-            background-color: white;
+           background-color: transparent;
             align-items: center;
             width: 200px;
-            height: 300px;
+            backdrop-filter: blur(5px);
+            height: 200px;
             display: flex;
             justify-content: center;
 
@@ -91,29 +97,53 @@
             height: 75px;
             width: 75px;
         }
+        nav{
+    background-color: black !important;
+    box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+  
+  }
+  .navbar.bg-light {
+     border-bottom: 4px solid green;
+     box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+    }
     </style>
 </head>
 <body>
     <div id="overlay-color">
-        <div id="header-color">
-            <br>
-            <br>
-            <div id="right-align-header-text">
-                HOME 
-                &nbsp; &nbsp; &nbsp; &nbsp; 
-                LOGIN 
-                &nbsp; &nbsp; &nbsp; &nbsp; 
-                OUR SERVICES 
-                &nbsp; &nbsp; &nbsp; &nbsp; 
-                ABOUT US
+        <nav class="navbar sticky-top navbar-expand-lg  border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="#">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Agri-Login
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/frontend/home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../services.html">Our Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/frontend/home.html"> About US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"disabled>chatbot </a>
+                  </li>
+                  
+                </ul>
+              </div>
             </div>
-        </div>
+          </nav>
         <br>    
         <div id="right-align-body-text">
             <div>Login</div>
             <br>
             <div style="font-size: 20px; color: black" id="loginbox">
-                <center>
+                <div class="center" style="width: 20vw;" > 
                     Username<br>
                     <input type="text">
                     <br><br>
@@ -122,12 +152,11 @@
                     <input type="password">
                     <br><br>
                     <button name="Log In">Log In</button>
-                </center>
+            </div>
                 
             </div>
         </div>
-        <br><br><br><br><br><br>
-        <br><br>
+        
         <div id="right-align-bottom-elements">
             <table>
                 <tr>
@@ -147,5 +176,6 @@
             </table>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

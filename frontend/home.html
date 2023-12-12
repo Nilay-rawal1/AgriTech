@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services-Agritech</title>
+    <link rel="stylesheet" href="service.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Home</title>
     <style>
         html, body{
@@ -22,7 +27,7 @@
             width: 100%;
             height: 10%;
         }
-        #right-align-header-text{
+        #right-align-header-text a{
             color: white;
             margin: 0 auto;
             margin-right: 5%;
@@ -33,6 +38,7 @@
             font-family: "Roboto", monospace;
             font-size: 22.5px;
         }
+      
         #right-align-body-text{
             color: white;
             margin: 0 auto;
@@ -81,32 +87,57 @@
             height: 75px;
             width: 75px;
         }
+        nav{
+    background-color: black !important;
+    box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+  
+  }
+  .navbar.bg-light {
+     border-bottom: 4px solid green;
+     box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+    }
+
+    
     </style>
 </head>
 <body>
+    <section>
     <div id="overlay-color">
-        <div id="header-color">
-            <br>
-            <br>
-            <div id="right-align-header-text">
-                HOME 
-                &nbsp; &nbsp; &nbsp; &nbsp; 
-                LOGIN 
-                &nbsp; &nbsp; &nbsp; &nbsp; 
-                OUR SERVICES 
-                &nbsp; &nbsp; &nbsp; &nbsp; 
-                ABOUT US
+        <nav class="navbar sticky-top navbar-expand-lg  border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkO4z4pbB1cm5BCmZ0C4saOjOQ1wGjZQGtPw&usqp=CAU" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Agri-Tech
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../services.html">Our Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/frontend/404.html"> About US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="login.html">Login </a>
+                  </li>
+                  
+                </ul>
+              </div>
             </div>
-        </div>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
+          </nav>
+     
         <div id="right-align-body-text">
             <div>AGRITECH</div>
             <div style="font-size: 60px;">“Growing Tomorrow”</div>
         </div>
-        <br><br><br><br><br><br>
-        <br><br><br><br><br><br>
-        <div id="right-align-bottom-elements">
+        
+        <div style="padding-top: 300px;" id="right-align-bottom-elements">
             <table>
                 <tr>
                     <td>
@@ -125,5 +156,11 @@
             </table>
         </div>
     </div>
+
+</section>
+<section class="about">
+            <H1>About Us</H1>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
