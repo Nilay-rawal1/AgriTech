@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
   
 }
 nav {
@@ -14,11 +14,28 @@ nav {
   border-bottom: 4px solid green;
   box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
 }
+ul{
+ padding-left: 24vw !important;
+
+}
+.active{
+  font: 1.2em sans-serif !important;
+  cursor: pointer;
+  padding-left: 20px !important;
+}
+.active:hover{
+  color: #4682B4 !important;
+  font-weight: bolder !important;
+  
+}
+
+
 
 .section {
-  background: rgb(0, 0, 0, 0.75) url("/frontend/home-background.jpg");
+  background: rgb(0, 0, 0, 0.75) url("../images/main bg.jpeg");
   background-attachment: fixed;
   background-position: center;
+
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: darken;
@@ -52,9 +69,10 @@ nav {
   font-size: 5.3vw;
 }
 
-.btn {
+.btns {
   border: 2px solid green !important;
   color: white !important;
+  font-weight: bold !important;
   width: 20em !important;
   height: 3rem !important;
   background: transparent !important;
@@ -62,17 +80,17 @@ nav {
   border-radius: 15px !important;
 }
 @media screen and (max-width: 880px){
-    .btn{
+    .btns{
         width: 10rem !important;
     }
     
 }
-.btn:hover {
+.btns:hover {
   background: green !important;
   transform: scale(1.15);
 }
 
-.container {
+.containerss {
   padding-bottom: 6.1vh !important;
   padding-top: 5vh;
   padding-left: 48vw !important;
@@ -96,17 +114,6 @@ nav {
     font-family:'Times New Roman', Times, serif;
     height:2rem;
 }
-.about{
-    background: rgb(0, 0, 0, 0.75) url("../images/main bg.jpeg");
-  background-attachment: fixed;
- 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
-
-  box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
-    
-}
 
 
   .scroll-down {
@@ -127,10 +134,15 @@ nav {
         display: none;
         zoom: normal;
     }
+    .containp{
+        width:  15em !important;
+        margin-left: 25px !important;
+       
+    }
     
 }
   
-  .scroll-down a {
+  .scroll-down .ancor {
     width: 64px;
     height: 64px;
     border: 5px solid orange !important;
@@ -138,7 +150,7 @@ nav {
     position: relative;
   }
   
-  .scroll-down a::after {
+  .scroll-down .ancor::after {
     content: '';
     width: 18px;
     height: 18px;
@@ -171,4 +183,101 @@ nav {
       opacity: 1;
     }
   }
-  
+  /* about section  */
+  .about{
+    background: rgb(0, 0, 0, 0.75) url("/frontend/home-background.jpg");
+  background-attachment: fixed;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+padding-bottom: 10px;
+ box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+    
+}
+
+  .heading .abouth1{
+    color: wheat !important;
+    padding: 0;
+    font-size:8vw;
+    font-weight: lighter !important;
+
+  }
+  .containh1{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 1em;
+  }
+  .containp{
+    display: flex;
+   
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(237, 231, 218);
+    width: 45rem;
+    text-align: justify;
+    font-size: 20px;
+    word-wrap: break-word;
+    box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+    backdrop-filter: blur(15px);
+    margin-bottom: 30px ;
+  }
+  @media screen and (min-width:580px) and (max-width:800px) {
+    .containp{
+        width: 25em !important;
+        margin-left: 45px !important;
+       
+    }
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*scroll bar*/
+  /* Define a steel blue shade */
+:root {
+  --scrollbar-track-color: #4682B4; /* Steel Blue */
+  --scrollbar-thumb-color: #5F9EA0; /* Light Steel Blue */
+}
+
+/* Define scrollbar styles */
+/* For webkit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(-45deg, transparent 20%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.8) 40%, transparent 40%, transparent 60%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0.8) 80%, transparent 80%);
+  background-size: 35px 35px;
+  animation: waveAnimation 2s infinite linear;
+}
+
+/* Keyframes for animating the wave effect */
+@keyframes waveAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  10% {
+    background-position: 5px 5px;
+  }
+}

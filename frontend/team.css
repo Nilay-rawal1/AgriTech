@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  padding-left: 23vw !important;
+}
+.active {
+  font: 1.2em sans-serif !important;
+  cursor: pointer;
+  padding-left: 20px !important;
+}
+.active:hover {
+  color: #4682b4 !important;
+  font-weight: bolder !important;
+}
+
+nav {
+  background-color: black !important;
+  box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+}
+.navbar.bg-light {
+  border-bottom: 4px solid green;
+  box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+}
+
+section {
+  background: rgb(0, 0, 0, 0.75) url("../images/bg2.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .heading h1 {
+    padding: 1rem;
+    color: white;
+    padding-top: 50px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 3vw;
+  }
+ 
+  .containh1{
+    color: white;
+    margin-top: 15vh !important;
+   
+    font-size: 5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .containp{
+    display: flex;
+   
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(237, 231, 218);
+    width: 45rem;
+    text-align: justify;
+    font-size: 20px;
+    word-wrap: break-word;
+    box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+    backdrop-filter: blur(15px);
+    margin-bottom: 30px ;
+  }
+  @media screen and (min-width:580px) and (max-width:800px) {
+    .containp{
+        width: 25em !important;
+        margin-left: 45px !important;
+       
+    }
+    
+  }
+  .containers{
+    max-width: 60vw;
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+
+  .card{
+    box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.961) !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s !important;
+    background: transparent !important ;
+    border: 2px groove rgb(0, 255, 26) !important;
+    backdrop-filter: blur(10px);
+    padding: 15px !important;
+    cursor: pointer;
+    border-radius: 20px !important;
+
+  }
+  .card-header {
+    color: black !important;
+    font-weight: 500;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+  border-radius: 20px !important;
+  padding: 2px !important; 
+    border: 2px solid;
+    background: linear-gradient( to bottom right,rgba(19, 74, 0, 1),rgba(123, 163, 227, 1));
+    text-align: center;
+    box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.361) !important;
+  }
+  .card-title {
+    text-align: center;
+    color: black !important;
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*scroll bar*/
+  /* Define a steel blue shade */
+  :root {
+    --scrollbar-track-color: #4682B4; /* Steel Blue */
+    --scrollbar-thumb-color: #5F9EA0; /* Light Steel Blue */
+  }
+  
+  /* Define scrollbar styles */
+  /* For webkit browsers */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(-45deg, transparent 20%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.8) 40%, transparent 40%, transparent 60%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0.8) 80%, transparent 80%);
+    background-size: 35px 35px;
+    animation: waveAnimation 2s infinite linear;
+  }
+  
+  /* Keyframes for animating the wave effect */
+  @keyframes waveAnimation {
+    0% {
+      background-position: 0 0;
+    }
+    10% {
+      background-position: 5px 5px;
+    }
+  }
+  

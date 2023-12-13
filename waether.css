@@ -11,6 +11,20 @@ nav{
   background-color: black !important;
 
 }
+ul{
+  padding-left: 27vw !important;
+ 
+ }
+ .active{
+   font: 1.2em sans-serif !important;
+   cursor: pointer;
+   padding-left: 20px !important;
+ }
+ .active:hover{
+   color: #4682B4 !important;
+   font-weight: bolder !important;
+   
+ }
 .navbar.bg-light {
    border-bottom: 4px solid green;
    box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
