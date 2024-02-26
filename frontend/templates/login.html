@@ -158,14 +158,17 @@
             <br>
             <div style="font-size: 20px; color: black" id="loginbox">
                 <div class="center" style="width: 20vw;" > 
+                  <form action="http://127.0.0.1:5000/login" method="post">
                     Username<br>
-                    <input type="text">
+                    <input type="text" name="username">
                     <br><br>
                     Password
                     <br>
-                    <input type="password">
+                    <input type="password" name="password">
                     <br><br>
-                    <button name="Log In">Log In</button>
+                    <button type="submit">Log In</button>
+                  </form>
+                    
             </div>
                 
             </div>
