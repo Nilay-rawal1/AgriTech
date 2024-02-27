@@ -32,7 +32,7 @@ ul{
 
 
 .section {
-  background: rgb(0, 0, 0, 0.75) url("../images/main bg.jpeg");
+  background: rgb(0, 0, 0, 0.75) url("../../images/main\ bg.jpeg");
   background-attachment: fixed;
   background-position: center;
 
@@ -185,7 +185,7 @@ ul{
   }
   /* about section  */
   .about{
-    background: rgb(0, 0, 0, 0.75) url("/frontend/home-background.jpg");
+    background: rgb(0, 0, 0, 0.75) url("/frontend//templates/home-background.jpg");
   background-attachment: fixed;
 
   background-size: cover;
