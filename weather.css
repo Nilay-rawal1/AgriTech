@@ -11,10 +11,9 @@ nav{
   background-color: black !important;
 
 }
-ul{
-  padding-left: 27vw !important;
- 
- }
+nav ul{
+  padding-right: 5vw !important;
+}
  .active{
    font: 1.2em sans-serif !important;
    cursor: pointer;
