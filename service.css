@@ -92,6 +92,39 @@ section {
   transform: scale(1.15);
 }
 
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%
+  }
+}
+
+.marquee-container {
+  height: 30px;
+  overflow: hidden;
+  border: 2px solid seagreen;
+  line-height: 30px;
+
+  .marquee {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    color: white;
+    animation: marquee 30s linear infinite;
+  }
+
+  .marquee2 {
+    animation-delay: 5s;
+  }
+  b {
+    padding-left: 10px;
+  }
+}
 
 
 
