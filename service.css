@@ -106,6 +106,8 @@ section {
   overflow: hidden;
   border: 2px solid seagreen;
   line-height: 30px;
+  border-left: none;
+  background-color: rgba(0, 255, 26, 0.107) ;
 
   .marquee {
     top: 0;
@@ -115,11 +117,12 @@ section {
     position: absolute;
     white-space: nowrap;
     color: white;
+    font-weight: 600;
     animation: marquee 30s linear infinite;
   }
 
   .marquee2 {
-    animation-delay: 5s;
+    animation-delay: 15s;
   }
   b {
     padding-left: 10px;
