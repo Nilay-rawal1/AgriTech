@@ -45,10 +45,10 @@
                 <div class="form-inner">
                   <form action="http://127.0.0.1:5000/login" method="post" class="login">
                     <div class="field">
-                      <input type="text" placeholder="Email Address" required>
+                      <input name="Login-Email" type="email" placeholder="Email Address" required>
                     </div>
                     <div class="field">
-                      <input type="password" placeholder="Password" required>
+                      <input name="Login-Password" type="password" placeholder="Password" required>
                     </div>
                     <div class="pass-link"><a href="#">Forgot password?</a></div>
                     <div class="field btn">
@@ -57,12 +57,12 @@
                     </div>
                     <div class="signup-link">Not a member? <a href="">Signup now</a></div>
                   </form>
-                  <form action="http://127.0.0.1:5000/login" method="post" class="signup">
+                  <form action="http://127.0.0.1:5000/register" method="post" class="signup">
                     <div class="field">
-                      <input type="text" placeholder="Email Address" required>
+                      <input name="Register-Email" type="email" placeholder="Email Address" required>
                     </div>
                     <div class="field">
-                      <input type="password" placeholder="Password" required>
+                      <input name="Register-Password" type="password" placeholder="Password" required>
                     </div>
                     <div class="field">
                       <input type="password" placeholder="Confirm password" required>
