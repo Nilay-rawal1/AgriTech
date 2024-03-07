@@ -169,7 +169,7 @@
   
   html, body{
       overflow: hidden;
-      background-image: url("login-background.jpg");
+      background-image: url("../images/login-background.jpg");
       background-size: cover, contain;
       background-repeat: no-repeat;
       margin:0;

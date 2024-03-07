@@ -26,7 +26,7 @@ nav {
 }
 
 section {
-  background: rgb(0, 0, 0, 0.75) url("images/main bg 3.jpeg");
+  background: rgb(0, 0, 0, 0.75) url("../images/main\ bg\ 3.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;

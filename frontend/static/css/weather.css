@@ -30,7 +30,7 @@ nav ul{
   }
 
 .bgimg{
-  background: rgb(0, 0, 0, 0.65) url("images/weather bg.jpeg");
+  background: rgb(0, 0, 0, 0.65) url("../images/weather\ bg.jpeg");
   background-size: cover;
   background-blend-mode: darken;
   height: 43rem;
