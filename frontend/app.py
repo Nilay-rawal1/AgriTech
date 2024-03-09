@@ -13,6 +13,15 @@ class User(db.Model):
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String(120), nullable=False)
 
+
+@app.route('/')
+def main():
+    return render_template('home.html')
+
+@app.route('/crop')
+def crop():
+    return render_template('Crop.html')
+
 @app.route("/home", endpoint="home()")
 def home():
     return render_template('home.html')
