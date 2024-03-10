@@ -317,3 +317,8 @@ padding-bottom: 10px;
     left: -100%
   }
 }
+
+
+.chatty a{
+  text-decoration: none;
+}

@@ -9,7 +9,7 @@
     background: rgb(0, 0, 0, 0.75) url("../../static/images/main\ bg.jpeg");
     background-attachment: fixed;
     background-position: center;
-  
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
@@ -85,6 +85,17 @@
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 10px;
       }
+      body{
+        background: rgb(0, 0, 0, 0.75) url("../../static/images/main\ bg.jpeg");
+        background-attachment: fixed;
+        background-position: center;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+      
+        box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+      }
       
   }
   .btns:hover {
@@ -142,12 +153,28 @@
          
       }
       form {
-        width: 400px;
+        
+        width: 400px !important;
         margin: 0 auto;
         text-align: center;
         padding: 20px;
         background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
+        border-radius: 20px;
+      }
+      label{
+        width: 10rem !important;
+      }
+      body{
+        
+        background: rgb(0, 0, 0, 0.75) url("../../static/images/main\ bg.jpeg");
+        background-attachment: fixed;
+        background-position: center;
+        width: 127% !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+      
+        box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
       }
       
   }
@@ -207,3 +234,6 @@
     }
     
      
+    .chatty a{
+      text-decoration: none;
+    }

@@ -51,7 +51,7 @@
         <div class="heading">
             <h1>Crop Recommendation System</h1>
             <div class="classform">
-                <form action="form" method="post">
+                <form action="http://127.0.0.1:5000/form" method="post" autocomplete="on">
                     <label for="Nitrogen">Nirogen:</label>
                     <input type="text" id="Nirogen" name="Nitrogen" min="0" max="100" placeholder="Nitrogen" required>
 
@@ -79,18 +79,20 @@
                     <input type="text" id="Rainfall" name="Rainfall" placeholder="Rainfall in MM" required min="0"
                         max="10000">
 
-                    <input type="submit" id="submit" name="submit" value="Predict Your Crop">
+                    <input type="submit" id="submit" name="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" value="Predict Your Crop">
                 </form>
             </div>
 
 
-
+            <h4>{{prediction}}</h4>
 
             <div class="container containerss justify-content-end">
                 <div class="chatty  sticky-bottom ">
-                    <label class="label"> How may I help you! </label>
+                    <a href="https://agribot-henna.vercel.app/">
+                    <label class="label"> AgriBot  </label>
                     <img src="../static/images/customer-care-icon.png" alt="Logo" width="80" height="74"
                         class="chattybot">
+                    </a>
                 </div>
 
             </div>
@@ -100,6 +102,7 @@
 
     </section>
 
+   
 
 
 
