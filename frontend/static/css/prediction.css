@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: rgb(0, 0, 0, 0.55) url("../../static/images/farm2.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+nav {
+  background-color: black !important;
+  position: sticky !important;
+  box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+}
+.navbar.bg-light {
+  border-bottom: 4px solid green;
+  box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+}
+ul {
+  padding-left: 24vw !important;
+}
+.active {
+  font: 1.2em sans-serif !important;
+  cursor: pointer;
+  padding-left: 20px !important;
+}
+.active:hover {
+  color: #4682b4 !important;
+  font-weight: bolder !important;
+}
+
+.glass {
+  /* From https://css.glass */
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10% !important;
+  margin: auto;
+  padding: auto;
+  background: rgba(206, 209, 190, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border: 1px solid rgba(206, 229, 30, 0.365);
+  width: 50vw;
+  height: 22rem;
+}
+h4 {
+  color: rgb(241, 249, 6);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-weight: 800;
+  font-size: 2rem;
+}
+@media screen and (max-width: 580px) {
+  h4 {
+    font-size: 1.2rem;
+  }
+  .glass {
+    width: max-content;
+    height: 20em;
+  }
+}
+.a {
+  position: relative;
+  padding: 10px 50px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0.2);
+}
+.a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.671),
+    transparent
+  );
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.a:hover:after {
+  left: 100%;
+}
+.a span {
+  position: absolute;
+  display: block;
+  transition: 0.5s ease;
+}
+.a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+}
+.a:hover span:nth-child(1) {
+  width: 100%;
+  transform: translateX(100%);
+}
+.a span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+}
+.a:hover span:nth-child(3) {
+  width: 100%;
+  transform: translateX(-100%);
+}
+.a span:nth-child(2) {
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 0;
+  background: #fff;
+}
+.a:hover span:nth-child(2) {
+  height: 100%;
+  transform: translateY(100%);
+}
+.a span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 0;
+  background: #fff;
+}
+.a:hover span:nth-child(4) {
+  height: 100%;
+  transform: translateY(-100%);
+}

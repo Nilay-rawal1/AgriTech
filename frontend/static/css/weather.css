@@ -1,64 +1,56 @@
-*{
+* {
   margin: auto;
   padding: auto;
   box-sizing: border-box;
-  
+
   overflow: hidden;
 }
 
-nav{
+nav {
   box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
   background-color: black !important;
-
 }
-nav ul{
+nav ul {
   padding-right: 5vw !important;
 }
- .active{
-   font: 1.2em sans-serif !important;
-   cursor: pointer;
-   padding-left: 20px !important;
- }
- .active:hover{
-   color: #4682B4 !important;
-   font-weight: bolder !important;
-   
- }
+.active {
+  font: 1.2em sans-serif !important;
+  cursor: pointer;
+  padding-left: 20px !important;
+}
+.active:hover {
+  color: #4682b4 !important;
+  font-weight: bolder !important;
+}
 .navbar.bg-light {
-   border-bottom: 4px solid green;
-   box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
-  }
+  border-bottom: 4px solid green;
+  box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
+}
 
-.bgimg{
+.bgimg {
   background: rgb(0, 0, 0, 0.65) url("../images/weather\ bg.jpeg");
   background-size: cover;
   background-blend-mode: darken;
   height: 43rem;
   box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.561) !important;
-
 }
 
-.formid{
+.formid {
   max-width: 40vw;
   justify-content: center;
   align-items: center;
-  
 }
-.formid input{
+.formid input {
   width: 20vw;
-  
+
   border: 3px groove green;
   border-radius: 20px;
-
-  
 }
-
 
 .project-card-view:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(72, 144, 97, 0.761) !important;
-
 }
 
 .project-card-view {
@@ -80,5 +72,3 @@ nav ul{
   height: auto !important;
   z-index: 1;
 }
-
-
